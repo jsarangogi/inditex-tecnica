@@ -1,0 +1,606 @@
+{
+	"info": {
+		"_postman_id": "53a597dc-d86a-48bc-b7fc-d1346afb7aac",
+		"name": "Inditex",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26125974"
+	},
+	"item": [
+		{
+			"name": "Request Params",
+			"item": [
+				{
+					"name": "Escenario 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(1);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(35.5);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price?date=2020-06-14 10:00:00&productId=35455&brandId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-06-14 10:00:00"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "brandId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(2);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(25.45);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price?date=2020-06-14 16:00:00&productId=35455&brandId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-06-14 16:00:00"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "brandId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(1);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(35.5);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price?date=2020-06-14 21:00:00&productId=35455&brandId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-06-14 21:00:00"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "brandId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(3);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(30.5);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price?date=2020-06-15 10:00:00&productId=35455&brandId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-06-15 10:00:00"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "brandId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(4);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(38.95);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price?date=2020-06-16 21:00:00&productId=35455&brandId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-06-16 21:00:00"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "brandId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "URL Params",
+			"item": [
+				{
+					"name": "Escenario 1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(1);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(35.5);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price?date=2020-06-14 10:00:00&productId=35455&brandId=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price"
+							],
+							"query": [
+								{
+									"key": "date",
+									"value": "2020-06-14 10:00:00"
+								},
+								{
+									"key": "productId",
+									"value": "35455"
+								},
+								{
+									"key": "brandId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(2);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(25.45);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price/1/35455/2020-06-14 16:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"1",
+								"35455",
+								"2020-06-14 16:00:00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 3",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(1);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(35.5);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price/1/35455/2020-06-14 21:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"1",
+								"35455",
+								"2020-06-14 21:00:00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(3);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(30.5);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price/1/35455/2020-06-15 10:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"1",
+								"35455",
+								"2020-06-15 10:00:00"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Escenario 5",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"pm.test(\"Product ID is equals to 35455\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.productId).to.eql(35455);",
+									"});",
+									"pm.test(\"Brand ID is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.brandId).to.eql(1);",
+									"});",
+									"pm.test(\"Price List is equals to 1\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.priceList).to.eql(4);",
+									"});",
+									"pm.test(\"Product price is equals to 35.5\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData.price).to.eql(38.95);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/price/1/35455/2020-06-16 21:00:00",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"price",
+								"1",
+								"35455",
+								"2020-06-16 21:00:00"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
